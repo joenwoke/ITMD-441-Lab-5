@@ -47,3 +47,15 @@ input[disabled] {
   background-color: #e9ecef;
   color: #555;
 }
+
+input[type="text"],
+input[disabled] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
