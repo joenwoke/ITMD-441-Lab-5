@@ -5,4 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	const tipAmount = document.getElementById("tipAmount");
 	const totalWithTax = document.getElementById("totalWithTax");
 	const totalWithTipTax = document.getElementById("totalWithTipTax");
+	
+	function updateValues() {
+		
+	}
 });
