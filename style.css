@@ -42,3 +42,8 @@ input[type="range"] {
   outline: none;
   transition: background 0.3s ease-in-out;
 }
+
+input[disabled] {
+  background-color: #e9ecef;
+  color: #555;
+}
