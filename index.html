@@ -18,8 +18,10 @@
         <input type="text" disabled/>
         
         <label for="tipSlider">Tip:</label>
-        <input type="range" min="0" max="100" value="0"/>
-        <span>0%</span>
+        <div class="slider-wrapper">
+          <input type="range" id="tipSlider" min="0" max="100" value="0"/>
+          <span id="tipPercent">0%</span>
+        </div>
         
         <label for="tipAmount">Tip Amount $:</label>
         <input type="text" id="tipAmount" disabled/>
