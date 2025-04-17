@@ -12,15 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		let tip = parseInt(tipSlider.value);
 		
 		if (isNaN(bill)) {
-			errorMsg.textContent = "Please enter a valid number.";
+			errorMessage.textContent = "Please enter a valid number.";
 			clearOutputs();
 			return;
 		} else if (bill < 0) {
-			errorMsg.textContent = "Bill cannot be negative.";
+			errorMessage.textContent = "Bill cannot be negative.";
 			clearOutputs();
 			return;
 		} else {
-			errorMsg.textContent = ""; // Clear error
+			errorMessage.textContent = ""; // Clear error
 		}
 		
 		tipPercent.textContent = `${tip}%`;
