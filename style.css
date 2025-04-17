@@ -31,3 +31,14 @@ form label {
   font-weight: 600;
   color: #333;
 }
+
+input[type="range"] {
+  width: 85%;
+  margin-top: 5px;
+  appearance: none;
+  height: 6px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  transition: background 0.3s ease-in-out;
+}
