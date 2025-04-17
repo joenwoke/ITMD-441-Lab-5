@@ -5,16 +5,22 @@ document.addEventListener("DOMContentLoaded", function () {
 	const tipAmount = document.getElementById("tipAmount");
 	const totalWithTax = document.getElementById("totalWithTax");
 	const totalWithTipTax = document.getElementById("totalWithTipTax");
+	const errorMessage= document.getElementById("errorMessage");
 	
 	function updateValues() {
 		let bill = parseFloat(billTotal.value);
 		let tip = parseInt(tipSlider.value);
 		
-		if (isNaN(bill) || bill < 0) {
-			tipAmount.value = '';
-			totalWithTax.value = '';
-			totalWithTipTax.value = '';
+		if (isNaN(bill)) {
+			errorMsg.textContent = "Please enter a valid number.";
+			clearOutputs();
 			return;
+		} else if (bill < 0) {
+			errorMsg.textContent = "Bill cannot be negative.";
+			clearOutputs();
+			return;
+		} else {
+			errorMsg.textContent = ""; // Clear error
 		}
 		
 		tipPercent.textContent = `${tip}%`;
@@ -27,6 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		tipAmount.value = tipAmt.toFixed(2);
 		totalWithTax.value = withTax.toFixed(2);
 		totalWithTipTax.value = finalTotal.toFixed(2);
+	}
+	
+	function clearOutputs() {
+		tipAmount.value = '';
+		totalWithTax.value = '';
+		totalWithTipTax.value = '';
 	}
 	
 	billTotal.addEventListener("input", updateValues);

@@ -81,3 +81,10 @@ input[type="range"]::-webkit-slider-thumb {
   color: #0072ff;
   margin-left: 10px;
 }
+
+.error {
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  height: 16px;
+}
