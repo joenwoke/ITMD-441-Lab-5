@@ -8,23 +8,25 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <h1>Tip Calculator</h1>
-    <form>
-      <label for="billTotal">Bill Total $:</label>
-      <input type="text"/>
-      
-      <label for="totalWithTax">Total Bill with Tax (11%):</label>
-      <input type="text" disabled/>
-      
-      <label for="tipSlider">Tip:</label>
-      <input type="range" min="0" max="100" value="0"/>
-      <span>0%</span>
-      
-      <label for="tipAmount">Tip Amount $:</label>
-      <input type="text" id="tipAmount" disabled/>
-      
-      <label for="totalWithTipTax">Total Bill with Tip and Tax $:</label>
-      <input type="text" id="totalWithTipTax" disabled/>
-    </form>
+    <div class="container">
+      <h1>Tip Calculator</h1>
+      <form>
+        <label for="billTotal">Bill Total $:</label>
+        <input type="text"/>
+        
+        <label for="totalWithTax">Total Bill with Tax (11%):</label>
+        <input type="text" disabled/>
+        
+        <label for="tipSlider">Tip:</label>
+        <input type="range" min="0" max="100" value="0"/>
+        <span>0%</span>
+        
+        <label for="tipAmount">Tip Amount $:</label>
+        <input type="text" id="tipAmount" disabled/>
+        
+        <label for="totalWithTipTax">Total Bill with Tip and Tax $:</label>
+        <input type="text" id="totalWithTipTax" disabled/>
+      </form>
+    </div>
   </body>
 </html>
