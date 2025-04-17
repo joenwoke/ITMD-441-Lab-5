@@ -24,3 +24,10 @@ h1 {
   color: #333;
   text-align: center;
 }
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333;
+}
