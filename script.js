@@ -28,4 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		totalWithTax.value = withTax.toFixed(2);
 		totalWithTipTax.value = finalTotal.toFixed(2);
 	}
+	
+	billTotal.addEventListener("input", updateValues);
+	tipSlider.addEventListener("input", updateValues);
 });
